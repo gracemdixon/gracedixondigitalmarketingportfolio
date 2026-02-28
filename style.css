@@ -1,0 +1,97 @@
+/* --- 1. Variables & Reset --- */
+:root {
+    /* Your New Palette */
+    --mustard: #d4a373;       /* Muted Mustard Yellow */
+    --mustard-dark: #bc8a5f;  /* For hover states */
+    --navy: #1e2f47;          /* Muted Navy Blue */
+    --cream: #fefae0;         /* Cream White Background */
+    --cream-darker: #f5f1da;  /* For subtle section backgrounds */
+    
+    /* Text & UI */
+    --text-main: #2d3436;
+    --text-muted: #636e72;
+    --white: #ffffff;
+    --transition: all 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif; /* A serif font adds to the premium feel */
+    background-color: var(--cream);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* --- 2. Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--mustard);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--cream);
+    margin-left: 2.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--mustard);
+}
+
+/* --- 3. Hero Section --- */
+header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--navy);
+    color: var(--cream);
+    padding: 0 10%;
+    border-bottom: 8px solid var(--mustard);
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--mustard);
+    max-width: 700px;
+    font-style: italic;
+}
+
+/* --- 4. Portfolio Grid --- */
+.
